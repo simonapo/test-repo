@@ -1,0 +1,19 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: ms-test
+  namespace: namespace-backend # Simona - Update the namespace post cluster creation.
+  labels:
+    application: ms-test
+spec:
+  host: ms-test-svc-int.apps.domainxxx.it  # Simona - this needs to be updated post cluster creation
+  to:
+    kind: Service
+    name: ms-test
+    weight: 100
+  port:
+    targetPort: proxy
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+  wildcardPolicy: None

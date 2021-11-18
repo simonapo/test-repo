@@ -1,0 +1,16 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: ms-test
+  namespace: namespace-backend # Simona - Update the namespace post cluster creation.
+  labels:
+    application: ms-test
+spec:
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+  selector:
+    deploymentConfig: ms-test
+  type: ClusterIP
+  sessionAffinity: None
