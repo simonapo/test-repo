@@ -1,5 +1,5 @@
 kind: ConfigMap
 apiVersion: v1
 metadata:
-  name: configmap-test-cm
+  name: configmap-test
   namespace: test-manifest
