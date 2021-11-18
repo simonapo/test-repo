@@ -2,7 +2,7 @@ kind: HorizontalPodAutoscaler
 apiVersion: autoscaling/v2beta2
 metadata:
   name: autoscaling-ms-test
-  namespace: namespace-backend # Simona - Update the namespace post cluster creation.
+  namespace: test-ns
 spec:
   scaleTargetRef:
     kind: DeploymentConfig
