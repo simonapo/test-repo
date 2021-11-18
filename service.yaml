@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: ms-test
-  namespace: namespace-backend # Simona - Update the namespace post cluster creation.
+  namespace: test-ns
   labels:
     application: ms-test
 spec:
