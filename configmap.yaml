@@ -2,4 +2,4 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: configmap-test
-  namespace: namespace-backend # Simona - Update the namespace post cluster creation.
+  namespace: test-ns
