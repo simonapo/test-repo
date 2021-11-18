@@ -2,7 +2,7 @@ kind: HorizontalPodAutoscaler
 apiVersion: autoscaling/v2beta2
 metadata:
   name: autoscaling-ms-test
-  namespace: test-ns
+  namespace: test-manifest
 spec:
   scaleTargetRef:
     kind: DeploymentConfig

@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: ms-test
-  namespace: test-ns
+  namespace: test-manifest
   labels:
     application: ms-test
 spec:
